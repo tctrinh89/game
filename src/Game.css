@@ -1,3 +1,13 @@
+.Game{
+    height: 90vh;
+}
+.StartGame{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin: 5px;
+}
 .Begin{
     display: flex;
     text-align: left;
@@ -23,3 +33,41 @@
 .Ketthuc{
     margin-top: 250px;
 }
+.Time{
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.Answer,.Question{
+    width:80%    ;
+    border: none;
+    background-color: orange;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.ButtonGame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ButtonGame button{
+    width: 65px;
+    height: 65px;
+    margin: 5px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.ButtonGame div:last-child button,.ButtonGame div:nth-child(11) button{
+    width: 300px;
+    height: 40px;
+    border-radius: 0;
+    color: red;
+    margin-top: 3px;
+}
+/* .ButtonGame div:last-child{
+    position:fixed; */
+    /* bottom: 10px;
+    margin-bottom: 50px; */
+/* } */

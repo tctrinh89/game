@@ -79,10 +79,11 @@ function Game(){
     useEffect(()=>{
         let so1=Math.floor(Math.random()*number)
         let so2=Math.floor(Math.random()*number)
+        let auto=Math.floor(Math.random()*10)
         let pheptoan=phepToans[Math.floor(Math.random()*phepToans.length)]
         const so=[so1,so2]
         so.sort((a,b)=>b-a)
-        setQuestion(`${so[0]} ${pheptoan ||'+'} ${so[1]}`)
+        setQuestion(`${so[0] || auto} ${pheptoan ||'+'} ${so[1] ||5}`)
     },[score])
     useEffect(()=>{
         console.log('xem')
@@ -142,7 +143,7 @@ function Game(){
                 <div className="StartGame">
                 <audio ref={audio} src={audio60s} autoPlay loop></audio>
                 <div>
-                    <p>Score: {score}</p>
+                    Score: {score}
                 </div>
                 <div className="Time">
                     {time}
