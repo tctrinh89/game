@@ -1,0 +1,25 @@
+.Begin{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.Button{
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Input{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.Check{
+    display: flex;
+}
+.Cho{
+    margin-top: 250px;
+}
+.Ketthuc{
+    margin-top: 250px;
+}

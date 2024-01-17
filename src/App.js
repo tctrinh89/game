@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Game from './Game';
 import './App.css';
 
 function App() {
+
+  const [showBegin,setShowBegin]=useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showBegin ? 
+      <Game /> :
+      <button onClick={e=>setShowBegin(!showBegin)}
+      style={{width:'250px',height:'30px',margin:'250px auto'}}>
+        Phép tính với 2 số
+      </button> 
+      }
     </div>
   );
 }
